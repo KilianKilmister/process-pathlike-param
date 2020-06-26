@@ -1,0 +1,31 @@
+{
+  "author": "Kilian <kilian@catsoft.ch>",
+  "name": "process-pathlike-param",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/main.js",
+  "type": "module",
+  "types": "@types/main.d.ts",
+  "description": "Small utility module that turns a file url or string into an absolute system path. Input can be a string or a buffer and it optionally checks if the path exists.",
+  "keywords": [],
+  "files": [
+    "dist/main.js",
+    "@types/main.d.ts"
+  ],
+  "scripts": {
+    "test": "echo \"TODO: add some default scripts\"",
+    "build": "tsc -p ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@k-foss/ts-esnode": "*",
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "babel-eslint": "*",
+    "eslint": "*",
+    "standardx": "*",
+    "ts-node": "*",
+    "typescript": "next"
+  }
+}

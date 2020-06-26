@@ -1,0 +1,92 @@
+{
+  "standard.options": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint/eslint-plugin"
+    ],
+    "ignore": [
+      "**/out/",
+      "**/node_modules/**",
+      "**/lib/**",
+      "**/@types/**"
+    ]
+  },
+  "standard.engine": "standardx",
+  "standard.usePackageJson": false,
+  "standard.autoFixOnSave": true,
+  "standard.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    "typescriptreact"
+  ],
+  "cSpell.ignorePaths": [
+    "**/package-lock.json",
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/objects/**",
+    ".vscode",
+    "**/.vscode*/**"
+  ],
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "html",
+    "markdown",
+  ],
+  "terminal.integrated.env.osx": {
+    "KK_DEVELOPMENT": "true",
+    "KK_WORKSPACE_FOLDER": "${workspaceFolder}",
+    "NODE_OPTIONS": "--experimental-import-meta-resolve --experimental-vm-modules --unhandled-rejections=strict --experimental-json-modules --experimental-repl-await",
+    //--report-compact, --title=title, NODE_REPL_EXTERNAL_MODULE=file
+    // --input-type=type --experimental-json-modules
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment.block",
+          "comment.line",
+          "comment",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "foreground": "#aaaaaaaa",
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "workbench.colorCustomizations": {},
+  "javascript.referencesCodeLens.showOnAllFunctions": true,
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*SC.yml": true,
+    "**/bootloader.js": true,
+    "**/localisation/braz_por,french,german,simp_chinese,russian,polish,spanish/**": true,
+    "**/ms-vscode.js-debug-nightly/src/bootloader.js": true,
+    "**/pdx_launcher": true,
+    "**/pdx_online_assets": true,
+    "**/.history": true,
+    ".history": true,
+    "**/.build-cache": true,
+    ".build-cache": true
+  },
+  "explorerExclude.backup": null,
+}

@@ -1,0 +1,9 @@
+# some usual gitignore properties.
+node_modules
+temp{!late}*
+.history/**
+.build-cache/**
+.{!vscode}*/**
+**/@types/**
+.DS_Store
+dist
